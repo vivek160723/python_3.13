@@ -10,4 +10,3 @@ while num > 0:
 
 
 print("Reversed number:", reverse)
-12

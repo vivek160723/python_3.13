@@ -1,4 +1,4 @@
-s=("naman")
+s=("vivek is hero")
 rev_string=" "
 for i in s:
     rev_string=i+rev_string

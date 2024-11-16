@@ -16,7 +16,7 @@
 # print(g[0:-2])
 #
 # print(chr(65))
-# print(ord("A"))
+print(ord("A"))
 # print(max('welcometopython'))
 # print(len('vivek'))
 # print('viv'in s)
