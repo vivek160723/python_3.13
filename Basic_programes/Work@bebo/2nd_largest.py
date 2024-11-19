@@ -1,6 +1,4 @@
 numbers = [10, 20, 4, 45, 99]
-
-# Ensure the list has at least two elements
 if len(numbers) < 2:
     print("Not enough elements to find the second largest number.")
 else:
@@ -8,10 +6,10 @@ else:
     second_largest = None
 
     for num in numbers:
-        if num > largest:  # Update largest and second largest
+        if num > largest:
             second_largest = largest
             largest = num
-        elif second_largest is None or (num > second_largest and num != largest):  # Update second largest
+        elif second_largest is None or (num > second_largest and num != largest):
             second_largest = num
 
     if second_largest is None:
