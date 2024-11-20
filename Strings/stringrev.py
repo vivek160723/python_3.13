@@ -1,4 +1,4 @@
-s=("vivek is hero")
+s=input("Enter the string to reverse: ")
 rev_string=" "
 for i in s:
     rev_string=i+rev_string
