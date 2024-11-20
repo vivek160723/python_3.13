@@ -1,27 +1,18 @@
-# Input strings
-string1 = "listen"
-string2 = "silent"
-
-# Remove spaces and convert to lowercase
-string1 = string1.replace(" ", "").lower()
-string2 = string2.replace(" ", "").lower()
-
-# Check if lengths are the same (quick fail case for non-anagrams)
-if len(string1) != len(string2):
-    print(f"'{string1}' and '{string2}' are not anagrams.")
-else:
-    # Create frequency dictionaries for both strings
-    freq1 = {}
-    freq2 = {}
-
-    for char in string1:
-        freq1[char] = freq1.get(char, 0) + 1
-
-    for char in string2:
-        freq2[char] = freq2.get(char, 0) + 1
-
-    # Compare the frequency dictionaries
-    if freq1 == freq2:
-        print(f"'{string1}' and '{string2}' are anagrams.")
+str1="listen"
+str2="silent"
+ans1={}
+ans2={}
+for i in str1:
+    if i in ans1:
+        ans1[i]+=1
     else:
-        print(f"'{string1}' and '{string2}' are not anagrams.")
+        ans1[i]=1
+for j in str2:
+    if j in ans2:
+        ans2[j]+=1
+    else:
+        ans2[j]=1
+if ans1==ans2:
+    print("yes they are anagram")
+else:
+    print("Noo the are not anagram")
