@@ -1,4 +1,4 @@
-#positonal arguments
+#positional arguments
 
 def fun4(n,s):
     print(n+s)
