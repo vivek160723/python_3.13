@@ -14,18 +14,30 @@
 # even_no=list(filter(lambda x:x%2==0,my_list))
 # print(even_no)
 
-print("-----------------")
-
-city=["chandigarh","goa","delhi"]
-
-# def length(city):
+# print("-----------------")
+#
+# city=["chandigarh","goa","delhi"]
+#
+# # def length(city):
 #     return len(city)
 # sort=sorted(city,key=length,reverse=False)
 # print(sort)
 
-# sort=sorted(city,key=lambda x:len(x))
-# print(sort)
+# # sort=sorted(city,key=lambda x:len(x))
+# # print(sort)
+#
+# my_list2=[2,3,4,5]
+# # even_no=set(map(lambda x:x**2,my_list2))
+# # print(even_no)
+#
+# from functools import reduce
+# z=reduce(lambda x,y:x+y,my_list2)
+# print(z)
+#
 
-my_list2=[2,3,4,5]
-even_no=set(map(lambda x:x**2,my_list2))
-print(even_no)
+# zip()
+
+a=["a","b","c","d","e","f"]
+b=[7,6,5,7]
+ans=zip(a,b)
+print(list(ans))
