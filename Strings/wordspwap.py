@@ -18,6 +18,7 @@ for i in s:
 rev_string += word
 print(rev_string)
 
+
 # s = (input("Enter the string:"))
 # ans = s.split()
 # for i in s:
