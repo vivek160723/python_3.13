@@ -34,11 +34,48 @@ wer(3,10,c=20)
 
 print("---------------------------")
 
+# *args argument--positional variable length argument,
+# allow a function to accept any no of positional arguments
+
+# **kwargs arguments--keyword variable length arguments
+#passed as tuple
+def greet(*n):
+    print("hello",{n})
+
+greet("vivek","gaurav")
+
+print("---------------------------")
+
+def args(**n):
+    for key,value in n.items():
+        print(f"{key} {value}")
+
+
+args(name="vivek",age =23,city="launchpad")
+print("---------------------------")
+def both(*x,**y):
+    print(x)
+    print(y)
+
+both(1,2,3,4 ,name="vivek",age=23)
+print("---------------------------")
+def both2(name,*x):
+    print(name)
+    print(x)
+
+both2("vivek","gaurav","noob",1,2,3,4,)
 
 
 
+print("---------------------------")
+def both3(n,*x,**y):
+    print(n)
+    for i in x:
+        print(i)
+    for i,j in y.items():
+        print(f"{i} {j}")
 
-
+both3("vivek",1,2,3,4 ,name="venom",city="pochinki",kd=-0.001)
 
 
 
