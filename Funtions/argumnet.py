@@ -20,7 +20,7 @@ print("---------------------------")
 def practice(i,j=200):
     return i,j
 
-print(practice(i=0,))
+print(practice(i=0))
 print("---------------------------")
 def allinone(name,msg):
      return name,msg
