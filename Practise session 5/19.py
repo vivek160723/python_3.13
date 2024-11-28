@@ -25,5 +25,6 @@ def generate_password(length):
 
 
 # Example usage
-password = generate_password(12)
+x=int(input("Enter the length of the password u want:"))
+password = generate_password(x)
 print(password)
