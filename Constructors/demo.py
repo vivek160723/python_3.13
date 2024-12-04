@@ -3,6 +3,28 @@
 # its name is fixed def __inti__(self)
 # it will not return any value
 # can also receive argument and parameter
+# A
+# constructor is used
+# to
+# set
+# up
+# the
+# initial
+# state
+# of
+# an
+# object.
+# •    It is commonly
+# used
+# to
+# assign
+# values
+# to
+# instance
+# variables
+# when
+# an
+# object is created.
 
 # ################################ Constructor ######################################
 class My_class:
