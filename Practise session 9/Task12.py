@@ -1,5 +1,5 @@
 from inventory.product import Product
-    # Create a Product instance
+
 product = Product(name="Laptop", price=75000, quantity=10)
 
 print("Initial Product Details:")
