@@ -12,6 +12,8 @@ class Circle(Shape):
     def draw(self):
         print("Drawing a circle.")
 
-circle = Circle()
-circle.display()
-circle.draw()
+if __name__ == "__main__":
+    shape = Shape()  # u can not make object of Abstract class
+    circle = Circle()
+    circle.display()
+    circle.draw()
