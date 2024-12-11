@@ -10,21 +10,21 @@
 # finally:
 #     # Code that will execute regardless of whether an exception occurred or not (optional)
 ####--------Example 1: Basic Exception Handling-------#####
-try:
-    x = int(input("Enter a number: "))
-    y = int(input("Enter another number: "))
-    result = x / y
-    print("Result:", result)
-except ZeroDivisionError:
-    print("Error: Division by zero is not allowed.")
-except ValueError:
-    print("Error: Invalid input. Please enter numbers only.")
-except Exception as e:
-    print(f"Unexpected error: {e}")
-else:
-    print("Operation successful!")
-finally:
-    print("Execution completed.")
+# try:
+#     x = int(input("Enter a number: "))
+#     y = int(input("Enter another number: "))
+#     result = x / y
+#     print("Result:", result)
+# except ZeroDivisionError:
+#     print("Error: Division by zero is not allowed.")
+# except ValueError:
+#     print("Error: Invalid input. Please enter numbers only.")
+# except Exception as e:
+#     print(f"Unexpected error: {e}")
+# else:
+#     print("Operation successful!")
+# finally:
+#     print("Execution completed.")
 #
 # ####--------Example 2: Catching Multiple Exceptions-------#####
 # try:
@@ -55,25 +55,25 @@ finally:
 #     validate_age(-5)
 # except ValueError as e:
 #     print(e)
-# #
+#-------------------------------------------------------------------------------------
 # # Key Concepts:
 # # try block: Code that might cause an exception.
 # # except block: Handles the exception; specific exception types can be caught.
 # # else block: Executes if no exception occurs.
 # # finally block: Executes regardless of whether an exception occurred (used for cleanup).
 # # Custom Exceptions: You can define your own exception classes for specific use cases.
-#
-# #       Example of a Custom Exception
-#
-# class NegativeValueError(Exception):
-#     pass
-#
-# def check_value(value):
-#     if value < 0:
-#         raise NegativeValueError("Value cannot be negative!")
-#
-# try:
-#     check_value(-10)
-# except NegativeValueError as e:
-#     print(e)
-#
+
+####-----Example of a Custom Exception-----####
+
+class NegativeValueError(Exception):
+    pass
+
+def check_value(value):
+    if value < 0:
+        raise NegativeValueError("Badmashi ni mitar!")
+
+try:
+    check_value(-10)
+except NegativeValueError as e:
+    print(e)
+
